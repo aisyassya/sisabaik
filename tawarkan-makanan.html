@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <a href="#konten-utama">Lewati ke konten utama</a>
+        <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
 
-        <header>
-            <p><strong>SisaBaik</strong></p>
-            <nav aria-label="Naviasi utama">
-                <ul>
+        <header class="site-header">
+            <div class="container header-layout">
+                <p class="brand">SisaBaik</p>
+                <nav aria-label="Naviasi utama">
+                <ul class="nav-list">
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="daftar-penyedia.html">Daftar sebagai penyedia</a></li>
                     <li>
@@ -28,21 +29,23 @@
             </nav>
         </header>
 
-        <main id="konten-utama" tabindex="-1">
+        <main class="container" id="konten-utama" tabindex="-1">
+            <main class="container" id="konten-utama" tabindex="-1"></main>
             <h1>Catat penawaran makanan berlebih</h1>
-            <p>
+            <p class="lead">
                 Gunakan data fiktif selama praktikum. Jangan menawarkan makanan yang
                 rusak, kedaluwarsa, tercemar, atau tidak aman dikonsumsi.
             
             </p>
-            <p id="petunjuk-wajib">Kolom bertanda<strong>*</strong>wajib diisi.</p>
+            <p class="required-note" id="petunjuk-wajib">Kolom bertanda <strong>*</strong> wajib diisi.</p>
 
             <form
+            class="form-card"
             action="tawarkan-makanan.html"
             method="get"
             aria-describedby="petunjuk-wajib"
             >
-            <fieldset>
+            <fieldset class="form-section">
             <legend>identitas makanan</legend>
 
             <p>
@@ -87,7 +90,7 @@
             </p>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form-section">
             <legend>Jumlah dan skema pemulihan nilai</legend>
 
             <p>
@@ -128,7 +131,7 @@
                 >
             </p>
 
-            <fieldset>
+            <fieldset class="form-section">
                 <legend>Jenis penawaran *</legend>
                 <p>
                     <input
@@ -171,7 +174,7 @@
             </p>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form-section">
             <legend>Keamanan dan pengembalian</legend>
 
             <p>
@@ -196,7 +199,7 @@
                 ></textarea>
             </p>
 
-            <fieldset>
+            <fieldset class="form-section">
                 <legend>Informasi alergen yang diketahui</legend>
                 <p>
                     <input type="checkbox" id="alergen-gluten" name="alergen" value="gluten">
@@ -233,7 +236,7 @@
             </p>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form-section">
             <legend>Konfirmasi keamanan pangan</legend>
             <p>
                 <input
@@ -250,16 +253,16 @@
             </p>
         </fieldset>
 
-        <p>
-            <button type="submit">Kirim penawaran latihan</button>
-            <button type="reset">Kosongkan formulir</button>
+        <p class="form-actions">
+            <button class="button" type="submit">Kirim penawaran latihan</button>
+            <button class="button button-secondary" type="reset">Kosongkan formulir</button>
         </p>
         </form>
 
-        <section aria-labelledby="batas-validasi-html">
+        <section class="section" aria-labelledby="batas-validasi-html">
             <h2 id="batas-validasi-html">Batas validasi pada tahap HTML</h2>
             <p>
-                Stribut HTML dapat memeriksa isian wajib, format dasar, dan rentang
+                Atribut HTML dapat memeriksa isian wajib, format dasar, dan rentang
                 angka. Namun, HTML belum dapat memastikan harga penawaran lebih kecil
                 daripada harga normal atau batas pengembalian berada di masa depan.
                 Aturan lintas-kolom tersebut akan ditambahkan dengan JavaScript dan
@@ -267,8 +270,10 @@
             </p>
         </section>
         </main>
-        <footer>
+        <footer class="site-footer">
+            <div class="container footer-layout">
             <p>&copy; 2026 SisaBaik-Proyek pembelajaran Pengembangan Web.</p>
+            </div>
         </footer>
     </body>
 </html>

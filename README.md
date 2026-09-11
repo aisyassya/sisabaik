@@ -4,12 +4,13 @@ Developed by Aisyah Ramadani (23367002)
 
 SisaBaik adalah proyek berkembang pada mata kuliah Pengembangan Web. Aplikasi ini dirancang untuk membantu penyedia memulihkan nilai stok makanan berlebih melalui penjualan dengan harga khusus atau penyaluran, sekaligus membantu masyarakat memperoleh makanan yang lebih terjangkau dan mengurangi limbah pangan.
 
-## Capaian Chapter 2
-
-- Membuat halaman informasi SisaBaik dengan semantic HTML.
-- Membuat formulir pendaftaran penyedia yang aksesibel.
-- Membuat formulir penawaran makanan berlebih yang aksesibel.
-- Mengelola perubahan kode dengan Git dan GitHub.
+## Capaian Chapter 3
+- Mempertahankan semantic HTML dan formulir aksesibel dari Chapter 2.
+- Menerapkan CSS cascade, box model, dan custom properties.
+- Menggunakan Flexbox untuk navigasi dan kelompok tombol.
+- Menggunakan Grid untuk kartu penawaran dan bagian halaman.
+- Membangun layout mobile-first dengan media queries.
+- Memeriksa kontras, fokus keyboard, reflow, dan konsistensi visual.
 
 ## Halaman
 
