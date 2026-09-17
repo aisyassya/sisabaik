@@ -260,23 +260,23 @@ a:hover {
   box-shadow: var(--shadow-card);
 }
 
-.offer-card .visual {
+.offer-card__visual {
   min-height: 8rem;
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
 }
 
-.offer-card_content {
+.offer-card__content {
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: 1.25rem;
 }
 
-.offer-card_meta {
+.offer-card__meta {
   color: var(--color-muted);
 }
 
-.offer-card .price {
+.offer-card __price {
   margin-block-start: auto;
   font-size: 1.15rem;
 }
